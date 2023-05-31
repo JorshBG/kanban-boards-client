@@ -1,0 +1,36 @@
+.container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container .container__body.body .body__h1{
+    margin: 0;
+    font-size: 15rem;
+    padding: 0;
+    text-align: center;
+}
+
+.container .container__body.body .message{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.container .container__body.body .message__icon{
+    margin: 0;
+    font-size: 10rem;
+    align-self: center;
+}
+
+.container .container__body.body .message__p{
+    font-size: 5rem;
+    grid-column: 2/6;
+}

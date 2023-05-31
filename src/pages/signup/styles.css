@@ -1,0 +1,62 @@
+.form__div,
+.square {
+  padding: 2rem;
+}
+
+
+
+.container .square {
+  background-color: #03045e;
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  rotate: 30deg;
+}
+
+.container {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.form__div {
+  background-color: #90e0ef;
+  display: grid;
+  grid-template-columns: 100%;
+  border: #03045e 4px solid;
+  border-radius: 10px;
+}
+
+.square__form {
+  rotate: -30deg;
+}
+
+.div__h1 {
+  color: #03045e;
+  font-weight: 600;
+  text-align: center;
+}
+
+.div__input {
+  margin: 0.5rem 5px;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px white;
+  border-radius: 5px;
+}
+
+.div__input:active {
+  outline: #03045e 2px;
+  border: 2px #03045e;
+}
+
+.form__div.div .div__input--submit {
+  background-color: #03045e;
+  padding: 10px;
+  color: #90e0ef;
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 6px;
+  border: none;
+}
