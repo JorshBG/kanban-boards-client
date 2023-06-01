@@ -33,9 +33,9 @@
     background-color: #CAF0F8;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 2px 0 2px#CAF0F8; */
     font-size: 18px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .sidebar .sidebar__content.content .content__a:hover{

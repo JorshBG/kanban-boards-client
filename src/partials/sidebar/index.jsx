@@ -6,20 +6,30 @@ import "./styles.css";
 
 SideBar.propTypes = {
   open: PropTypes.bool.isRequired,
+  setView: PropTypes.func.isRequired,
 };
 
-export default function SideBar({ open }) {
-
-  const privilege = localStorage.getItem("privilege");
+export default function SideBar({ open, setView }) {
+  const role = localStorage.getItem("role");
 
   return (
     <div className={"sidebar " + (open ? "" : "hidden")}>
       <div></div>
       <div className="sidebar__content content">
         {menus.map((menu) => (
-          <a href={menu.path} hidden={privilege === "user" && menu.privilege === "admin"} key={menu.title} className="content__a">
-            {menu.title}
-          </a>
+          <>
+            {role === menu.privilege ? (
+              <a
+                key={menu.title}
+                className="content__a"
+                onClick={() => setView(menu.path)}
+              >
+                {menu.title}
+              </a>
+            ) : (
+              ""
+            )}
+          </>
         ))}
       </div>
     </div>

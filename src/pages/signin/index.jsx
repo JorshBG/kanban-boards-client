@@ -1,7 +1,15 @@
 import "./styles.css";
 import api from "../../api";
+import { useEffect } from "react";
 
 export default function SignIn() {
+
+  useEffect(() => {
+    if(localStorage.getItem('userId')){
+      window.location.href = '/dashboard';
+    }
+  }, []);
+
 
   // handler submit form to make fetch to api
   const handleSubmit = async (e) => {
@@ -15,12 +23,14 @@ export default function SignIn() {
     }).then(response => {
       localStorage.clear();
       if(response.status === 200){
+        // console.log(response.data)
         localStorage.setItem('userId', response.data.data.id);
         localStorage.setItem('name', response.data.data.name);
         localStorage.setItem('last_name', response.data.data.last_name);
         localStorage.setItem('role_id', response.data.data.role_id);
         localStorage.setItem('email', response.data.data.email);
         localStorage.setItem('cellphone', response.data.data.cellphone);
+        localStorage.setItem('role', response.data.role);
         window.location.href = '/dashboard';
       }
     }).catch(error => {

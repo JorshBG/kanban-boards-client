@@ -1,4 +1,4 @@
-.card.grid {
+.banner.grid {
   position: absolute;
   left: 0;
     right: 0;
@@ -14,14 +14,14 @@
   width: 80%;
 }
 
-.card__image.image.grid {
+.banner__image.image.grid {
   display: grid;
   grid-template-columns: 100%;
   justify-items: center;
   align-items: center;
 }
 
-.card.grid .card__body.body .body__heading.heading {
+.banner.grid .banner__body.body .body__heading.heading {
   /* position: absolute; */
   border-radius: 8px;
   background-color: #03045e;
@@ -29,7 +29,7 @@
   padding-top: 10px;
 }
 
-.card.grid .card__body.body .body__heading.heading .heading__p {
+.banner.grid .banner__body.body .body__heading.heading .heading__p {
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-size: 89px;
   color: white;
@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-.message .message__button {
+.banner.grid .banner__body.body .body__message.message .message__button {
   background-color: #90e0ef;
   color: #03045e;
   /* font-weight: bold; */
@@ -49,19 +49,19 @@
   margin-top: -110px;
 }
 
-.body .body__message.message {
+.banner.grid .banner__body.body .body .body__message.message {
   width: 100%;
   display: grid;
   justify-items: center;
 }
 
-.card.grid .card__options.grid {
+.banner.grid .banner__body.body .banner__options.grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   row-gap: 4rem;
 }
 
-.card.grid .card__options.grid .grid__a {
+.banner.grid .banner__options.grid .grid__a {
   border-radius: 10px;
   border: solid 2px #03045e;
   padding: 1rem;
@@ -71,33 +71,33 @@
   text-decoration: none;
 }
 
-.card.grid .card__options.grid .grid__a.one {
+.banner.grid .banner__options.grid .grid__a.one {
   grid-column: 2/5;
   background-color: #03045e;
   color: white;
 }
 
-.card.grid .card__options.grid .grid__a.two {
+.banner.grid .banner__options.grid .grid__a.two {
   grid-column: 1/4;
   color: #03045e;
 }
 
-.card.grid .card__options.grid .grid__icon {
+.banner.grid .banner__options.grid .grid__icon {
   color: #0077b6;
   font-size: 60px;
 }
 
-.card.grid .card__options.grid .grid__icon.icon {
+.banner.grid .banner__options.grid .grid__icon.icon {
   justify-self: center;
 }
 
-.card__icon.icon .icon__row {
+.banner__icon.icon .icon__row {
   font-size: 70px;
   margin-bottom: 5rem;
   margin-top: 1rem;
 }
 
-.card__icon.icon {
+.banner__icon.icon {
   display: grid;
   width: 100%;
   justify-items: center;

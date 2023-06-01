@@ -9,26 +9,59 @@
 
 .navbar .navbar__content.content{
     display: grid;
-    grid-template-columns: repeat(10, 10%);
+    grid-template-columns: repeat(20, 5%);
     align-items: center;
     padding: 10px;
 }
 
-.navbar .navbar__content.content .icon{
+.navbar .navbar__content.content .content__profile .profile__icon{
     font-size: 32px;
     cursor: pointer;
     color: #03045E;
 }
 
 .navbar .navbar__content.content .content__profile{
-    grid-column: 10;
-    justify-self: center;
+    grid-column: 19;
+    justify-self: end;
 }
 
-.navbar .navbar__content.content .content__sidebar{
-    margin-left: 10px;
+.navbar .navbar__content.content .content__profile .profile__menus.menus{
+    position: fixed;
+    background-color: #CAF0F8;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 4px solid #03045E;
+    box-shadow: 2px 0 5px #03045E;
 }
 
-.asda{
-    grid-column: 4;
+.navbar .navbar__content.content .content__profile .profile__menus.menus .menus__button{
+    background-color: #CAF0F8;
+    border-radius: 6px;
+    padding: 5px;
+    border: none;
+    color: #03045E;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.navbar .navbar__content.content .content__profile .profile__menus.menus .menus__button:hover{
+    background-color: #03045E;
+    color: #CAF0F8;
+}
+
+.navbar .navbar__content.content .content__sidebar.icon{
+    margin-right: 10px;
+    margin-left:auto;
+    grid-column: 20;
+    font-size: 32px;
+}
+
+.navbar .navbar__content.content .content__username.username {
+    grid-column: 17 / 19;
+    justify-self: end;
+}
+
+.navbar .navbar__content.content .content__username.username .username__p {
+    color:#03045E;
+    font-weight: bold;
 }
