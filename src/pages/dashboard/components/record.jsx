@@ -41,6 +41,7 @@ export default function Record({
   };
   useEffect(() => {
     console.log('reloaded');
+    setReload(visible);
   }, [visible]);
   return (
     <>
